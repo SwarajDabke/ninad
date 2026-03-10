@@ -9,17 +9,39 @@
 body {
   background: linear-gradient(145deg, #2a1a0a 0%, #1a1a1a 60%, #0d0d0d 100%);
   padding: 0;
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
 .login-wrap {
-  width: 390px;
-  height: 100vh;
+  width: 100%;
+  max-width: 480px;
+  min-height: 100vh;
   position: relative;
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  body {
+    background: linear-gradient(145deg, #1a0d04 0%, #1a1a1a 100%);
+  }
+
+  .login-wrap {
+    min-height: auto;
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 40px 80px rgba(0,0,0,0.5);
+    max-height: 90vh;
+  }
+
+  .login-form {
+    overflow-y: auto;
+  }
 }
 
 /* Hero top section */

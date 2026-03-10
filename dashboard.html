@@ -150,6 +150,13 @@
   margin-bottom: 28px;
 }
 
+@media (min-width: 768px) {
+  .services-grid { grid-template-columns: repeat(6, 1fr); }
+  .stats-row { grid-template-columns: repeat(4, 1fr); }
+  .promo-banner { max-width: 560px; }
+  .greeting h1 { font-size: 34px; }
+}
+
 .service-card {
   background: var(--card);
   border-radius: 18px;
@@ -360,6 +367,10 @@
 
   <!-- Bottom Nav -->
   <nav class="bottom-nav">
+    <div class="nav-brand">
+      <div class="brand-icon">⚡</div>
+      <div class="brand-name">QuickRun</div>
+    </div>
     <a class="nav-item active" href="dashboard.html">
       <span class="nav-icon">🏠</span>Home
     </a>
